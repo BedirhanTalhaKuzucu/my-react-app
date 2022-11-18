@@ -160,6 +160,8 @@
      background: #000
  }
  
+ 
+
  .owl-carousel .owl-video-play-icon {
      position: absolute;
      height: 80px;
@@ -168,7 +170,7 @@
      top: 50%;
      margin-left: -40px;
      margin-top: -40px;
-     /* background: url(owl.video.play.png) no-repeat; */
+     background: url(/home/bedirhan/Desktop/myReactTask/my-react-app/src/images/img_1.jpg) no-repeat;
      cursor: pointer;
      z-index: 1;
      -webkit-backface-visibility: hidden;
