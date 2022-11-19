@@ -1,13 +1,14 @@
 import React from 'react'
 import backroundImg from "../images/bg_1.jpg"
  
-function HeaderSection() {
+function HeaderSection({title}) {
+
     return (
         <section className="probootstrap-cover overlay" style={{ backgroundImage: `url(${backroundImg })` }}>
             <div className="container">
                 <div className="row align-items-center justify-content-center text-center probootstrap-vh-100">
                     <div className="col-md-8">
-                        <h1 className="probootstrap-heading">Create Good Free Templates</h1>
+                        <h1 className="probootstrap-heading">{title} </h1>
                         <h2 className="h3 probootstrap-subheading mb-5">
                             A free template by <a href="#">uicookies.com</a>
                         </h2>

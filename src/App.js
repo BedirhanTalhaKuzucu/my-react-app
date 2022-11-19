@@ -1,15 +1,13 @@
-import HeaderSection from "./components/HeaderSection";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import AppRouter from "./AppRouter/AppRouter";
+import About from "./pages/About";
 
 
 function App() {
   return (
     <>
-      <Navbar />
-      <HeaderSection />
-      <Home />
-      
+      {/* <Navbar /> */}
+      <AppRouter />
     </>
   );
 }

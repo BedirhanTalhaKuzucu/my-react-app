@@ -1,19 +1,25 @@
 import React from "react";
-import Carousel from "./Carousel";
-import Services from "./Services";
-import Subscribe from "./Subscribe";
+import Carousel from "../components/Carousel";
+import Services from "../components/Services";
+import Subscribe from "../components/Subscribe";
 import { carouselItem } from "../assets/crouselItems"
-import Section from "./Section";
+import Section from "../components/Section";
 import person1 from "../images/person_1.jpg"
 import person2 from "../images/person_2.jpg"
 import person3 from "../images/person_3.jpg"
-import Footer from "./Footer";
+import Footer from "../components/Footer";
+import HeaderSection from "../components/HeaderSection";
+import { useState } from "react";
+import TogetherWork from "../components/TogetherWork";
 
 function Home() {
+    const [title, settitle] = useState("Create Good Free Templates")
+
 
 
     return (
         <>
+            <HeaderSection title = {title} />
             <Section>
                 <div className="row mb-5">
                     <div className="col-md-12">
@@ -57,22 +63,7 @@ function Home() {
                 </div>
             </Section>
             <Section>
-                <div className="row mb-5">
-                    <div className="col-md-12">
-                        <div className="border p-5">
-                            <div className="row">
-                                <div className="col-md-4">
-                                    <h4>Let's Work Together. Get Started.</h4>
-                                </div>
-                                <div className="col-md-1"></div>
-                                <div className="col-md-7">
-                                    <p className="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    <p><a href="https://uicookies.com/" target="_blank" className="btn btn-primary">Get In Touch</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <TogetherWork />
             </Section>
             <Footer />
         </>

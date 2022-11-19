@@ -47,5 +47,43 @@ export const carouselItem = {
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             </div>
         </div>
+    ],
+    team: [
+        <>
+            <img src={person1} className="img-fluid" alt="Free Template by uicookies.com" />
+            <div class="p-4 border border-top-0">
+                <h4>James Carl</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+        </>,
+        <>
+            <img src={person2} className="img-fluid" alt="Free Template by uicookies.com" />
+            <div class="p-4 border border-top-0">
+                <h4>Craig Smith</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+        </>,
+        <>
+            <img src={person3} className="img-fluid" alt="Free Template by uicookies.com" />
+            <div class="p-4 border border-top-0">
+                <h4>Peter Wood</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+        </>,
+        <>
+            <img src={person1} className="img-fluid" alt="Free Template by uicookies.com" />
+            <div class="p-4 border border-top-0">
+                <h4>James Carl</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+        </>,
+        <>
+            <img src={person2} className="img-fluid" alt="Free Template by uicookies.com" />
+            <div class="p-4 border border-top-0">
+                <h4>Craig Smith</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+        </>
+
     ]
 }
