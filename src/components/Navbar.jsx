@@ -1,7 +1,13 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import Collapse from 'react-bootstrap/Collapse';
+import { useState } from 'react';
 
 function Navbar() {
+
+    const [open, setOpen] = useState(false);
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark probootstrap-navabr-dark">
             <div className="container">
@@ -11,44 +17,52 @@ function Navbar() {
                 <NavLink to="/" className="navbar-brand"   >
                     Initial
                 </NavLink>
-                <button
+
+                <Button
+                    variant="dark"
+                    size="sm"
                     className="navbar-toggler"
                     type="button"
+                    onClick={() => setOpen(!open)}
+                    aria-controls="probootstrap-nav"
+                    aria-expanded={open}
                     data-toggle="collapse"
                     data-target="#probootstrap-nav"
-                    aria-controls="probootstrap-nav"
-                    aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
                     <span className="navbar-toggler-icon"></span>
-                </button>
 
-                <div className="collapse navbar-collapse" id="probootstrap-nav">
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item ">
-                            <NavLink to="/" className="nav-link"   >
-                                Home
-                            </NavLink>
+                </Button>
 
-                        </li>
-                        <li className="nav-item">
-                            <NavLink to="/about" className="nav-link"   >
-                                About
-                            </NavLink>
+                <Collapse in={open}>
+                    <div className="collapse navbar-collapse" id="probootstrap-nav">
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item ">
+                                <NavLink to="/" className="nav-link" onClick={() => setOpen(false)}   >
+                                    Home
+                                </NavLink>
 
-                        </li>
-                        <li className="nav-item">
-                            <NavLink to="/services" className="nav-link"   >
-                                Services
-                            </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <a href="contact.html" class="nav-link">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to="/about" className="nav-link" onClick={() => setOpen(false)}   >
+                                    About
+                                </NavLink>
+
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to="/services" className="nav-link" onClick={() => setOpen(false)}   >
+                                    Services
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to="/contact" className="nav-link" onClick={() => setOpen(false)}   >
+                                    Contact
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </Collapse>
+
             </div>
         </nav>
     )
