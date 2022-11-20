@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "../components/Carousel";
-import Services from "../components/Services";
+import Facilities from "../components/Facilities";
 import Subscribe from "../components/Subscribe";
 import { carouselItem } from "../assets/crouselItems"
 import Section from "../components/Section";
@@ -39,7 +39,7 @@ function Home() {
                         </p>
                     </div>
                 </div>
-                <Services />
+                <Facilities />
             </Section>
             <Subscribe />
             <Section>

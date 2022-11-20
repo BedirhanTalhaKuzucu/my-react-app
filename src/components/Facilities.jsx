@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Services() {
+function Facilities() {
     return (
         <div className="row">
             <div className="col-lg-4 col-md-6">
@@ -92,4 +92,4 @@ function Services() {
     )
 }
 
-export default Services
+export default Facilities

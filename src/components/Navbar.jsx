@@ -5,9 +5,12 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark probootstrap-navabr-dark">
             <div className="container">
-                <a className="navbar-brand" href="index.html">
+                {/* <a className="navbar-brand" href="index.html">
                     Initial
-                </a>
+                </a> */}
+                <NavLink to="/" className="navbar-brand"   >
+                    Initial
+                </NavLink>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -22,26 +25,22 @@ function Navbar() {
 
                 <div className="collapse navbar-collapse" id="probootstrap-nav">
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item active">
+                        <li className="nav-item ">
                             <NavLink to="/" className="nav-link"   >
                                 Home
                             </NavLink>
-                            {/* <a href="index.html" class="nav-link">
-                                Home
-                            </a> */}
+
                         </li>
                         <li className="nav-item">
                             <NavLink to="/about" className="nav-link"   >
                                 About
                             </NavLink>
-                            {/* <a href="about.html" class="nav-link">
-                                About
-                            </a> */}
+
                         </li>
                         <li className="nav-item">
-                            <a href="services.html" class="nav-link">
+                            <NavLink to="/services" className="nav-link"   >
                                 Services
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="nav-item">
                             <a href="contact.html" class="nav-link">

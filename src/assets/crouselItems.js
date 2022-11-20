@@ -1,6 +1,10 @@
 import person1 from "../images/person_1.jpg"
 import person2 from "../images/person_2.jpg"
 import person3 from "../images/person_3.jpg"
+import services1 from "../images/img_1.jpg"
+import services2 from "../images/img_2 .jpg"
+import services3 from "../images/img_3.jpg"
+
 
 
 export const carouselItem = {
@@ -81,6 +85,43 @@ export const carouselItem = {
             <img src={person2} className="img-fluid" alt="Free Template by uicookies.com" />
             <div class="p-4 border border-top-0">
                 <h4>Craig Smith</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+        </>
+
+    ],
+    services: [
+        <>
+            <img src={services1} className="img-fluid" alt="Free Template by uicookies.com" />
+            <div className="p-4">
+                <h4>Services Title Here</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+        </>,
+        <>
+            <img src={services2} className="img-fluid" alt="Free Template by uicookies.com" />
+            <div className="p-4">
+                <h4>Services Title Here</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+        </>,
+        <>
+            <img src={services3} className="img-fluid" alt="Free Template by uicookies.com" />
+            <div className="p-4">
+                <h4>Services Title Here</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+        </>, <>
+            <img src={services1} className="img-fluid" alt="Free Template by uicookies.com" />
+            <div className="p-4">
+                <h4>Services Title Here</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+        </>,
+        <>
+            <img src={services2} className="img-fluid" alt="Free Template by uicookies.com" />
+            <div className="p-4">
+                <h4>Services Title Here</h4>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             </div>
         </>

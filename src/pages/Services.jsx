@@ -9,8 +9,9 @@ import HeaderSection from "../components/HeaderSection";
 import { useState } from "react";
 import TogetherWork from "../components/TogetherWork";
 
-function About() {
-    const [title, settitle] = useState("A Good Company")
+function Services() {
+
+    const [title, settitle] = useState("A Good Services")
 
     return (
         <>
@@ -18,7 +19,7 @@ function About() {
             <Section>
                 <div className="row mb-5">
                     <div className="col-md-4">
-                        <h2 className="h1 mb-5 mt-0">The Team</h2>
+                        <h2 className="h1 mb-5 mt-0">The Services <span className="text-primary">Images</span></h2>
                     </div>
                     <div className="col-md-2"></div>
                     <div className="col-md-6">
@@ -28,13 +29,13 @@ function About() {
 
                 <div className="row mb-5">
                     <div className="col-md-12">
-                        <Carousel items={carouselItem.team} />
+                        <Carousel items={carouselItem.services} />
                     </div>
                 </div>
 
                 <div className="row mb-5 pt-5">
                     <div className="col-md-4">
-                        <h2 className="h1 mb-5 mt-0">Our Services</h2>
+                        <h2 className="h1 mb-5 mt-0">The Services <span className="text-primary">Icons</span></h2>
                     </div>
                     <div className="col-md-2"></div>
                     <div className="col-md-6">
@@ -45,11 +46,11 @@ function About() {
             </Section>
             <Subscribe />
             <Section>
-               <TogetherWork />
+                <TogetherWork />
             </Section>
             <Footer />
         </>
     )
 }
 
-export default About
+export default Services
